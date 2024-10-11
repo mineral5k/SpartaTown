@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller.MoveEvent += Move;
-
         
     }
 
