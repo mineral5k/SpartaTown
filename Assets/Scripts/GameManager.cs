@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     public string playerName;
-    public int characterSelect;
+    public int characterSelect = 1;
    
 
 
