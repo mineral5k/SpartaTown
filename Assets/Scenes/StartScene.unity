@@ -170,7 +170,7 @@ MonoBehaviour:
   playerName: 
   characterSelect: 1
   pengImage: {fileID: 21300000, guid: bc773256dd1a7474a86a67f0fe38f4b4, type: 3}
-  humanImage: {fileID: 21300000, guid: 8bd8a87ef1d4a5c45a119c9abdfb08af, type: 3}
+  humanImage: {fileID: 4723107735738678597, guid: 0bd97e23f8b532a4f8969605a3b00a4e, type: 3}
 --- !u!1 &361129760
 GameObject:
   m_ObjectHideFlags: 0

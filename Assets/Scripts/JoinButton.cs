@@ -16,7 +16,6 @@ public class JoinButton : MonoBehaviour
     public void Enter()
     {
         GameManager.Instance.playerName = inputField.text;
-        Debug.Log($"{GameManager.Instance.playerName}");
         SceneManager.LoadScene("MainScene");
     }
 }

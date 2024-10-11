@@ -9,23 +9,27 @@ public class AnimateController : MonoBehaviour
     private PlayerController playerController;
 
     private static readonly int isWalking = Animator.StringToHash("isWalking");
+    private static readonly int characterSelect = Animator.StringToHash("characterSelect");
+
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         playerController = GetComponentInParent<PlayerController>();
+        animator.SetInteger(characterSelect, GameManager.Instance.characterSelect);
     }
 
     private void Start()
     {
         playerController.MoveEvent += Move;
+        
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     private void Move(Vector2 direction)
