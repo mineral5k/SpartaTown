@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class CSelect : MonoBehaviour
+public class CharacterSelect : MonoBehaviour
 {
-   
+
+    [SerializeField] private int character ;
+
+    
     private Image spriteRenderer;
 
     private void Awake()
@@ -16,25 +19,20 @@ public class CSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameManager.Instance.characterSelect ==1)
+        if (character == 1)
         {
             spriteRenderer.sprite = GameManager.Instance.pengImage;
-        }    
-        else if( GameManager.Instance.characterSelect ==2)
+        }
+        else if (character == 2)
         {
             spriteRenderer.sprite = GameManager.Instance.humanImage;
         }
-             
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SelectCharacter()
     {
-        
-    }
-
-    public void Click()
-    {
-        SceneManager.LoadScene("SelectScene");
+        GameManager.Instance.characterSelect = character;
+        SceneManager.LoadScene("StartScene");
     }
 }
