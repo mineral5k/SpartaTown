@@ -30353,6 +30353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 1003168742}
   panel: {fileID: 457374679}
+  namePlate: {fileID: 396236147}
 --- !u!114 &1515990640
 MonoBehaviour:
   m_ObjectHideFlags: 0

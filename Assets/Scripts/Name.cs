@@ -12,7 +12,9 @@ public class Name : MonoBehaviour
         nameTxt = GetComponent<Text>();
     }
     // Start is called before the first frame update
-    void Start()
+   
+
+    private void OnEnable()
     {
         nameTxt.text = GameManager.Instance.playerName;
     }

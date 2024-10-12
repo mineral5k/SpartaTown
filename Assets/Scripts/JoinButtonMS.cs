@@ -8,6 +8,7 @@ public class JoinButtonMS : MonoBehaviour
 {
     [SerializeField] public InputField inputField;
     [SerializeField] public GameObject panel;
+    [SerializeField] public GameObject namePlate;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,7 @@ public class JoinButtonMS : MonoBehaviour
     {
         GameManager.Instance.playerName = inputField.text;
         panel.SetActive(false);
-
-
+        namePlate.SetActive(false);
+        namePlate.SetActive(true);
     }
 }
