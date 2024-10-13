@@ -16,6 +16,9 @@ public class AnimateController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         playerController = GetComponentInParent<PlayerController>();
+    }
+    private void OnEnable()
+    {
         animator.SetInteger(characterSelect, GameManager.Instance.characterSelect);
     }
 
